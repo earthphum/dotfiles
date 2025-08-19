@@ -1,0 +1,51 @@
+# i3blocks configuration file
+# See: https://vivien.github.io/i3blocks
+
+# Global settings
+separator=true
+separator_block_width=15
+markup=pango  # รองรับ pango markup เพื่อให้มี icon หรือสี HTML ได้
+
+
+
+######################################
+# Greeting Block (แสดงชื่อ user)
+[greetings]
+label=
+command=echo "$USER"
+color=#f5af19
+interval=once
+
+######################################
+# Time / Date Block
+[time]
+label=🕒
+command=~/.config/i3blocks/scripts/time.sh
+interval=1
+signal=10
+color=#61afef
+
+######################################
+# CPU Usage Block
+[cpu]
+label=💻
+command=awk '{u=$2+$4; t=$2+$4+$5} NR==1{cpu=u; total=t} NR==2{print int((u-cpu)/(t-total)*100)"%"}' <(grep 'cpu ' /proc/stat; sleep 1; grep 'cpu ' /proc/stat)
+interval=5
+color=#98c379
+
+######################################
+# Memory Usage Block
+[memory]
+label=🧠
+command=free -h | awk '/Mem:/ { print $3 "/16G "  }'
+interval=10
+color=#c678dd
+
+######################################
+[battery]
+label= 
+command=~/.config/i3blocks/battery.sh
+interval=1
+signal=10   
+command=~/.config/i3blocks/scripts/battery.sh
+color=#61afef

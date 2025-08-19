@@ -1,0 +1,8 @@
+#This from dual
+
+set $mod Mod4
+font pango:Mitr 16
+exec --no-startup-id dex --autostart --environment i3
+
+include ~/.config/i3/settings/base
+include ~/.config/i3/external/dualworkspace

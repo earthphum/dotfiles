@@ -1,0 +1,16 @@
+# All workspaces on eDP
+workspace 1 output eDP
+workspace 2 output eDP
+workspace 3 output eDP
+workspace 4 output eDP
+workspace 5 output eDP
+workspace 6 output eDP
+workspace 7 output eDP
+workspace 8 output eDP
+workspace 9 output eDP
+workspace 10 output eDP
+
+# set display
+bindsym $mod+F1 exec --no-startup-id ~/.config/i3/default-xrandr.sh
+bindsym $mod+F2 exec --no-startup-id ~/.config/i3/dual-xrandr.sh
+bindsym $mod+F3 exec --no-startup-id ~/.config/i3/dual-xrandr-but-external.sh

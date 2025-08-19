@@ -1,0 +1,20 @@
+
+# Assign workspaces 1-7 to HDMI
+workspace 1 output HDMI-A-0
+workspace 2 output HDMI-A-0
+workspace 3 output HDMI-A-0
+workspace 4 output HDMI-A-0
+workspace 5 output HDMI-A-0
+workspace 6 output HDMI-A-0
+workspace 7 output HDMI-A-0
+
+# Assign workspaces 8-10 to eDP
+workspace 8 output eDP
+workspace 9 output eDP
+workspace 10 output eDP
+
+
+# set display
+bindsym $mod+F1 exec --no-startup-id ~/.config/i3/xrandr/default-xrandr.sh
+bindsym $mod+F2 exec --no-startup-id ~/.config/i3/xrandr/dual-xrandr.sh
+bindsym $mod+F3 exec --no-startup-id ~/.config/i3/xrandr/dual-xrandr-but-external.sh

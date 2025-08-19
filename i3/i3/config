@@ -1,0 +1,10 @@
+#This from dual
+
+set $mod Mod4
+font pango:Noto Sans CJK SC,Noto Sans CJK TC,Noto Sans CJK JP,Noto Sans CJK KR,Mitr 12
+
+exec --no-startup-id dex --autostart --environment i3
+
+include ~/.config/i3/settings/base
+include ~/.config/i3/external/dualworkspace
+
