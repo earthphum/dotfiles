@@ -1,0 +1,11 @@
+adwaita-fonts
+fontconfig
+gnu-free-fonts
+libfontenc
+libxfont2
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+woff2-font-awesome
+xorg-fonts-encodings
+xorg-mkfontscale
