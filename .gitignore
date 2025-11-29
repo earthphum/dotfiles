@@ -1,0 +1,32 @@
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore compiled files
+*.zwc
+*.zwc.old
+
+# Ignore backup files created by the installation script
+*.*.backup.*
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Ignore directories that shouldn't be in dotfiles
+.cache/
+.local/share/
+.ssh/
+.gnupg/
+.oh-my-zsh/
