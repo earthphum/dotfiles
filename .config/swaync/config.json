@@ -1,0 +1,44 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-positionX": "right",
+  "control-center-positionY": "top",
+
+  "layer-shell": true,
+
+  "widgets": [
+    "dnd",
+    "title",
+    "notifications"
+  ],
+
+  "notification-window-width": 380,
+  "control-center-width": 380,
+  "control-center-height": 600,
+
+  "notification-margin": 12,
+  "notification-padding": 14,
+
+  "timeout": 5000,
+  "timeout-low": 5000,
+  "timeout-critical": 0,
+
+  "show-indicator": false,
+
+  "dnd-default-state": false,
+  "dnd-toggle-off": "Turn Off Do Not Disturb",
+  "dnd-toggle-on": "Turn On Do Not Disturb",
+
+  "notification-icons": true,
+
+  "widget-config": {
+    "title": {
+      "text": "Notifications"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    }
+  }
+}
+

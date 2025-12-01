@@ -1,0 +1,12 @@
+location=center
+width=480
+height=300
+prompt=Search...
+allow_images=true
+image_size=24
+matching=fuzzy
+term=kitty
+lines=8
+hide_scroll=true
+no_actions=true
+

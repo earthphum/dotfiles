@@ -49,8 +49,11 @@ compinit
 # =====================================================
 #  Autosuggestions
 # =====================================================
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#555555"
+
+
 
 
 # =====================================================
@@ -69,7 +72,8 @@ eval "$(zoxide init zsh)"
 # =====================================================
 #  fast-syntax-highlighting (ต้องล่างสุดของ plugins)
 # =====================================================
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZSH_CUSTOM/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
 
 
 # =====================================================
@@ -93,7 +97,9 @@ alias la="ls -A"
 alias l="ls -CF"
 alias c="clear"
 alias ca="cat"
-
+alias vim="nvim"
+alias v="nvim"
+alias zed="zeditor"
 # ถ้าติดตั้ง bat
 command -v bat &> /dev/null && alias b="bat"
 
