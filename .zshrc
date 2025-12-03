@@ -10,7 +10,7 @@ fi
 # =====================================================
 export EDITOR="nvim"
 export VISUAL="nvim"
-
+export QT_QPA_PLATFORM="xcb"
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -100,6 +100,8 @@ alias ca="cat"
 alias vim="nvim"
 alias v="nvim"
 alias zed="zeditor"
+alias em="cd ~/earth/"
+alias ew="cd ~/earth/wetrust/"
 # ถ้าติดตั้ง bat
 command -v bat &> /dev/null && alias b="bat"
 

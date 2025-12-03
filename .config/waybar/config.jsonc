@@ -57,11 +57,10 @@
   },
 
   "temperature": {
-    "hwmon-path": "/sys/class/thermal/thermal_zone0/temp",
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
     "critical-threshold": 80,
-    "format": " {temperatureC}°C"
+    "format": "GPU {temperatureC}°C"
   },
-
   // ====== Audio ======
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -94,9 +93,7 @@
 
   // ====== Custom: logo (ซ้ายสุด hacker feel) ======
   "custom/logo": {
-    "format": "",
-    "tooltip": "Hyprland // Waybar // Hacker mode",
-    "on-click": "kitty",
+    "format": "",
     "interval": 0
   },
 
