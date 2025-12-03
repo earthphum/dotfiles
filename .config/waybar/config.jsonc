@@ -20,9 +20,9 @@
     "pulseaudio",
     "battery",
     "tray",
+    "custom/night-mode",
     "custom/power"
   ],
-
   // ====== Hyprland modules ======
   "hyprland/workspaces": {
     "format": "{name}",
@@ -112,6 +112,14 @@
     "tooltip": "Power menu",
     "on-click": "wofi-power || wlogout || hyprctl dispatch exit",
     "interval": 0
-  }
+  },
+    "custom/night-mode":{
+    "format":"{}",
+    "tooltip": false,
+    "exec": "pgrep wlsunset > /dev/null && echo '🌙' || echo '☀️'",
+    "on-click": "~/.config/waybar/scripts/nightLight.sh",
+    "interval": 1
+  },
+
 }
 

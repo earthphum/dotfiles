@@ -28,7 +28,7 @@ sudo pacman -S --noconfirm \
   mesa vulkan-icd-loader lib32-mesa lib32-vulkan-icd-loader \
   yazi zed \
   ntfs-3g exfatprogs dosfstools \
-  caddy
+  caddy wlsunset
 
 echo ">>> INSTALL MULTIMEDIA (FFmpeg + Players)"
 sudo pacman -S --noconfirm \
