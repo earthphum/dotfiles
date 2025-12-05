@@ -90,7 +90,8 @@ yay -S --noconfirm \
   ttf-sarabun \
   bibata-cursor-theme-bin \
   brave-bin google-chrome \
-  zen-browser-bin
+  zen-browser-bin \
+  nwg-bar
 
 echo ">>> INSTALL OH-MY-ZSH NON-INTERACTIVE"
 export RUNZSH=no

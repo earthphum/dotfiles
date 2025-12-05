@@ -102,6 +102,7 @@ alias v="nvim"
 alias zed="zeditor"
 alias em="cd ~/earth/"
 alias ew="cd ~/earth/wetrust/"
+alias rm="trash"
 # ถ้าติดตั้ง bat
 command -v bat &> /dev/null && alias b="bat"
 
