@@ -28,7 +28,8 @@ sudo pacman -S --noconfirm \
   mesa vulkan-icd-loader lib32-mesa lib32-vulkan-icd-loader \
   yazi zed \
   ntfs-3g exfatprogs dosfstools \
-  caddy wlsunset ncdu trash-cli
+  caddy wlsunset ncdu trash-cli \
+  rust-analyzer tmux
 
 echo ">>> INSTALL MULTIMEDIA (FFmpeg + Players)"
 sudo pacman -S --noconfirm \
