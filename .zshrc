@@ -103,6 +103,7 @@ alias zed="zeditor"
 alias em="cd ~/earth/"
 alias ew="cd ~/earth/wetrust/"
 alias rm="trash"
+alias fm="yazi" # file manager
 # ถ้าติดตั้ง bat
 command -v bat &> /dev/null && alias b="bat"
 
