@@ -3,6 +3,14 @@ return {
     "snacks.nvim",
     opts = {
       dashboard = { enabled = false },
+      explorer = { enabled = true },
+      picker = {
+        hidden = true,
+        ignored = false,
+        sources = {
+          files = { hidden = true },
+        },
+      },
     },
     keys = {
       {
