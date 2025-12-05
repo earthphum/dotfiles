@@ -1,0 +1,10 @@
+[mgr]
+show_hidden = true       # โชว์ไฟล์ที่ซ่อน (.) ไว้เสมอ
+sort_by     = "mtime"    # เรียงตามเวลาแก้ไขล่าสุด (ปกติเป็น "alphabetical")
+sort_dir_first = true    # เอาโฟลเดอร์ไว้บนสุดเสมอ
+linemode    = "size"     # แสดงขนาดไฟล์ที่ท้ายบรรทัด (หรือแก้เป็น "none", "permissions")
+
+[preview]
+max_width   = 1000       # ความกว้างสูงสุดของหน้าพรีวิว
+max_height  = 1000       # ความสูงสูงสุด
+image_filter = "lanczos3" # คุณภาพการย่อรูป (lanczos3 ชัดสุดแต่กินแรงเครื่องนิดหน่อย)
