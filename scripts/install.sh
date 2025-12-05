@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm \
   yazi zed \
   ntfs-3g exfatprogs dosfstools \
   caddy wlsunset ncdu trash-cli \
-  rust-analyzer tmux net-tools bat
+  rust-analyzer tmux net-tools bat imv gwenview
 
 echo ">>> INSTALL MULTIMEDIA (FFmpeg + Players)"
 sudo pacman -S --noconfirm \
