@@ -11,5 +11,12 @@ image_filter = "lanczos3"
 
 [opener]
 image = [{ run = 'imv "$@"', orphan = true, for = "linux" }]
+office = [{ run = 'libreoffice "$@"', orphan = true, for = "linux" }]
+pdf = [{ run = 'evince "$@"', orphan = true, for = "linux" }]
 [open]
-rules = [{ name = "*.jpg", use = "image" }, { name = "*.png", use = "image" }]
+rules = [
+  { name = "*.jpg", use = "image" },
+  { name = "*.png", use = "image" },
+  { name = "*.csv", use = "office" },
+  { name = "*.pdf", use = "pdf" },
+]

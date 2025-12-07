@@ -6,7 +6,7 @@ return {
       explorer = { enabled = true },
       picker = {
         hidden = true,
-        ignored = false,
+        ignored = true,
         sources = {
           files = { hidden = true },
         },
