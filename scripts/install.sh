@@ -116,12 +116,14 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting \
 echo ">>> SET DEFAULT SHELL TO ZSH"
 chsh -s /bin/zsh
 
+echo "Install sddm"
+sudo pacman -S plasma --noconfirm
 mkdir -p /usr/share/wallpapers/earth
-cp -r ~/dotfiles/wallapers/luffy.jpg /usr/share/wallpapers/earth/
-cp -r ~/dotfiles/sddm/autologin.conf /etc/sddm.conf.d/
-cp -r ~/dotfiles/sddm/ui.conf /etc/sddm.conf.d/
-rm -rf /usr/share/sddm/themes/breeze/
-cp -r ~/dotfiles/sddm/breeze/ /usr/share/sddm/themes/
+sudo cp -r ~/dotfiles/wallapers/luffy.jpg /usr/share/wallpapers/earth/
+sudo cp -r ~/dotfiles/sddm/autologin.conf /etc/sddm.conf.d/
+sudo cp -r ~/dotfiles/sddm/ui.conf /etc/sddm.conf.d/
+sudo rm -rf /usr/share/sddm/themes/breeze/
+sudocp -r ~/dotfiles/sddm/breeze/ /usr/share/sddm/themes/
 
 echo ">>> ALL DONE!"
 echo ">>> REBOOT NOW."
