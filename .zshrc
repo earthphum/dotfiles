@@ -27,7 +27,11 @@ if [[ "$TERM_PROGRAM" == "kitty" ]]; then
   export TERM="xterm-kitty"
 fi
 
-
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 # =====================================================
 #  Oh-My-Zsh
 # =====================================================
@@ -101,7 +105,7 @@ alias ca="cat"
 alias vim="nvim"
 alias v="nvim"
 alias zed="zeditor"
-alias em="cd ~/earth/"
+alias em="cd ~/earth/myproject/"
 alias ew="cd ~/earth/wetrust/"
 alias rm="trash"
 alias fm="yazi" # file manager
@@ -120,3 +124,10 @@ command -v bat &> /dev/null && alias b="bat"
 #  Load Powerlevel10k config
 # =====================================================
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# bun completions
+[ -s "/home/retsam/.bun/_bun" ] && source "/home/retsam/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
