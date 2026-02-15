@@ -1,5 +1,28 @@
 return {
   {
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- ต้องการ Treesitter และ Nerd Font
+    opts = {}, -- ใช้ค่า Default ก็สวยแล้ว
+    -- หรือถ้าอยากปรับแต่งเพิ่ม:
+    config = function()
+      require("render-markdown").setup({
+        heading = {
+          -- ปรับแต่งสัญลักษณ์หน้าหัวข้อ
+          sign = true,
+          icons = { "qc ", "qc ", "qc ", "qc ", "qc ", "qc " },
+        },
+      })
+    end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+  {
     "folke/flash.nvim",
     event = "VeryLazy",
     opts = {
